@@ -1,16 +1,12 @@
 class PriorityQueue(object):
 	def __init__(self):
 		self.queue = []
-
 	def __str__(self):
 		return ' '.join([str(i) for i in self.queue])
-
 	def isEmpty(self):
 		return len(self.queue) == 0
-
 	def insert(self, data):
 		self.queue.append(data)
-
 	def delete(self):
 		try:
 			max_val = 0
@@ -23,7 +19,6 @@ class PriorityQueue(object):
 		except IndexError:
 			print()
 			exit()
-
 if __name__ == '__main__':
 	myQueue = PriorityQueue()
 	myQueue.insert(12)
